@@ -29,7 +29,7 @@ export function limitInputRange (year,month,day){
     return false;
   } else if (month === 2 && day > 29) {
     return false;
-  } else if (Math.round(year) != year || Math.round(month)!= month || Math.round(day) != day ) {
+  } else if (Math.ceil(year) != year || Math.ceil(month)!= month || Math.ceil(day) != day ) {
     return false;
   }else {
     return true;
